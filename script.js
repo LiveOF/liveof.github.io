@@ -18,7 +18,7 @@ async function myFunction() {
 
 
 async function request(city){
-    const apiUrl = `http://api.weatherapi.com/v1/current.json?key=d187c09bd95740a681054255243105&q=${city}&aqi=no`;
+    const apiUrl = `https://api.weatherapi.com/v1/current.json?key=d187c09bd95740a681054255243105&q=${city}&aqi=no`;
 
     let response = await fetch(apiUrl);
     if (response.ok) {
